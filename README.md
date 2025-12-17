@@ -170,13 +170,16 @@ Output (8 classes) + Softmax
 
 ### Overall Performance
 
-| Metric | Result |
-| Training Accuracy	| 96% |
-| Validation Accuracy |	94% |
-| Testing Accuracy | 93% |
-| Precision	| 93% |
-| Recall | 94% |
-| F1-Score | 0.93 |
+### 📊 Model Performance Metrics
+
+| Metric               | Result |
+|----------------------|--------|
+| Training Accuracy    | 96%    |
+| Validation Accuracy  | 94%    |
+| Testing Accuracy     | 93%    |
+| Precision            | 93%    |
+| Recall               | 94%    |
+| F1-Score             | 0.93   |
 
 ### Per-Class Performance
 
@@ -195,9 +198,9 @@ Output (8 classes) + Softmax
 
 ### Confusion Matrix Insights
 
-- **Best Classified**: Bernese Mountain Dog (97.2% recall)
-- **Most Confused Pairs**: Chow Chow ↔ Entlebucher (due to similar features)
-- **Weak Performance**: Maltese (88.6% recall)
+- **Best Classified**: Airedale (97.2% recall)
+- **Most Confused Pairs**: Bernese Mountain Dog ↔ Entlebucher (due to similar features)
+- **Weak Performance**: Silky Terrier (88.6% recall)
 - **Overall**: High diagonal values indicate good classification
 
 ## 🚀 Getting Started
