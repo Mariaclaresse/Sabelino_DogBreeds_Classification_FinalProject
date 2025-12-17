@@ -128,6 +128,7 @@ Sabelino__DogBreed_Classification_FinalProject/
 
 ### Model Architecture Diagram
 
+```
 INPUT (150×150×3)
 ↓
 Conv2D (32) + ReLU
@@ -149,6 +150,7 @@ Dense (256) + ReLU + Dropout(0.5)
 Dense (128) + ReLU
 ↓
 Output (8 classes) + Softmax
+```
 
 ### Model Specifications
 
