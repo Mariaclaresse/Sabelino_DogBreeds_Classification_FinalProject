@@ -18,12 +18,12 @@ An intelligent image classification system powered by **Deep Learning and Convol
 
 ## 🎯 Project Objectives
 
-- 🐕 Accurately classify multiple dog breeds from images  
+- 📌 Accurately classify multiple dog breeds from images  
 - 📌 Implement a complete machine learning workflow  
-- 🧠 Apply deep learning techniques to real-world problems  
-- 📊 Analyze and visualize model performance  
-- 💻 Prepare the model for mobile and web deployment  
-- 🎓 Demonstrate practical ML skills for academic use  
+- 📌 Apply deep learning techniques to real-world problems  
+- 📌 Analyze and visualize model performance  
+- 📌 Prepare the model for mobile and web deployment  
+- 📌 Demonstrate practical ML skills for academic use  
 
 ---
 
@@ -45,49 +45,55 @@ An intelligent image classification system powered by **Deep Learning and Convol
 ## 📂 Project Structure
 
 ```
-PawScan_DogBreed_Classification/
+Sabelino__DogBreed_Classification_FinalProject/
 │
 ├── data/
-│ ├── raw/
-│ │ └── dog_images/
-│ │ ├── Airedale/
-│ │ ├── Beagle/
-│ │ ├── Labrador_Retriever/
-│ │ ├── Bulldog/
-│ │ ├── Poodle/
-│ │ ├── Beagle/
-│ │ ├── Rottweiler/
-│ │ └── Siberian_Husky/
-│ └── processed/
-│ ├── train/
-│ ├── val/
-│ └── test/
+│   ├── raw/
+│   │   └── dog_images/
+│   │       ├── Airedale/          [100-250 images]
+│   │       ├── Beagle/         [100-250 images]
+│   │       ├── Bernese Mountain Dog/       [100-250 images]
+│   │       ├── Cairn Terrier/       [100-250 images]
+│   │       ├── Chow Chow/           [100-250 images]
+│   │       ├── Entlebutcher/      [100-250 images]
+│   │       ├── Maltese/         [100-250 images]
+│   │       ├── Pug/      [100-250 images]
+│   │       ├── Silky Terrier/         [100-250 images]
+│   │       └── Tibetan Terrier/ [100-250 images]
+│   └── processed/
+│       ├── train/
+│       ├── val/
+│       └── test/
 │
 ├── models/
-│ ├── pawscan_model.h5
-│ └── model_architecture.json
+│   ├── trained_model.h5         # Final trained model
+│   ├── model_weights.h5         # Model weights
+│   └── model_architecture.json  # Architecture definition
 │
 ├── notebooks/
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_preprocessing.ipynb
-│ ├── 03_model_building.ipynb
-│ ├── 04_training.ipynb
-│ └── 05_evaluation.ipynb
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_data_preprocessing.ipynb
+│   ├── 03_model_development.ipynb
+│   ├── 04_model_training.ipynb
+│   └── 05_evaluation_analysis.ipynb
 │
 ├── src/
-│ ├── preprocessing.py
-│ ├── model.py
-│ ├── train.py
-│ ├── evaluate.py
-│ └── predict.py
+│   ├── __init__.py
+│   ├── preprocessing.py          # Data preparation functions
+│   ├── model.py                 # CNN model architecture
+│   ├── train.py                 # Training script
+│   ├── evaluate.py              # Evaluation metrics
+│   ├── predict.py               # Prediction script
+│   └── utils.py                 # Helper functions
 │
 ├── results/
-│ ├── accuracy_curve.png
-│ ├── loss_curve.png
-│ ├── confusion_matrix.png
-│ └── classification_report.txt
+│   ├── confusion_matrix.png
+│   ├── accuracy_curves.png
+│   ├── loss_curves.png
+│   └── classification_report.txt
 │
 ├── requirements.txt
+├── config.yaml
 ├── README.md
 └── LICENSE
 ```
