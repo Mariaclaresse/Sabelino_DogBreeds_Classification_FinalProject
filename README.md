@@ -1,7 +1,6 @@
 # 🐾 PawScan – Dog Breeds Image Classification System
-An intelligent image classification system powered by **Deep Learning and Convolutional Neural Networks (CNNs)** that accurately identifies different dog breeds from images. PawScan is designed for educational, research, and real-world pet identification applications.
 
----
+An intelligent image classification system powered by **Deep Learning and Convolutional Neural Networks (CNNs)** that accurately identifies different dog breeds from images. PawScan is designed for educational, research, and real-world pet identification applications.
 
 ## 📋 Overview
 
@@ -13,7 +12,7 @@ An intelligent image classification system powered by **Deep Learning and Convol
 - **Dataset**: Dog Breed Image Dataset  
 - **Problem**: Multi-class classification  
 - **Accuracy Target**: 90%+  
-- **Deployment Ready**: Yes (Web & Mobile compatible)
+- **Deployment Ready**: Yes, with inference scripts
 
 ---
 
@@ -45,13 +44,14 @@ An intelligent image classification system powered by **Deep Learning and Convol
 
 ## 📂 Project Structure
 
+```
 PawScan_DogBreed_Classification/
 │
 ├── data/
 │ ├── raw/
 │ │ └── dog_images/
-│ │ ├── Golden_Retriever/
-│ │ ├── German_Shepherd/
+│ │ ├── Airedale/
+│ │ ├── Beagle/
 │ │ ├── Labrador_Retriever/
 │ │ ├── Bulldog/
 │ │ ├── Poodle/
@@ -90,7 +90,7 @@ PawScan_DogBreed_Classification/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
+```
 
 ---
 
