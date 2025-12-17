@@ -180,3 +180,53 @@ Output (8 classes) + Softmax
 
 ---
 
+🚀 Future Improvements
+
+📱 Mobile app integration (Flutter + TensorFlow Lite)
+
+🌐 Web-based classifier
+
+🎥 Real-time camera prediction
+
+🔍 Grad-CAM visualization
+
+🧬 More dog breed classes
+
+⚡ Model optimization for speed
+
+🎓 Educational Value
+
+This project demonstrates:
+
+✔ CNN-based image classification
+
+✔ Data preprocessing & augmentation
+
+✔ Model training & evaluation
+
+✔ Real-world AI application
+
+✔ Deployment-ready ML system
+
+👤 Author
+
+Maria Claresse Onilebas
+
+🎓 BS Information Technology (BSIT)
+
+🧠 Project: PawScan – Dog Breed Classifier
+
+📧 Email: onilebas.mariaclaresse@gmail.com
+
+⭐ Support the Project
+
+If you find this helpful:
+
+⭐ Star the repository
+
+🔀 Fork and improve
+
+📢 Share with classmates
+
+---
+
