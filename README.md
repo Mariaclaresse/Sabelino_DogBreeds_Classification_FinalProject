@@ -257,7 +257,7 @@ This project is part of academic coursework for educational purposes.
 
 ## 👤 Author
 
-**Johnny Guzon**
+**Maria Claresse C. Sabelino**
 - **GitHub**: [@Mariaclaresse](https://github.com/Mariaclaresse)
 - **Program**: BS Information Technology (BSIT)
 - **Institution**: Caraga State University Cabadbaran Campus
