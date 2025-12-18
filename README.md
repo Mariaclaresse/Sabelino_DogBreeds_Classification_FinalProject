@@ -1,4 +1,4 @@
-# 🐾 PawScan – Dog Breeds Image Classification Mobile App
+# 🐾 PawScan – Dog Breeds Image Classification
 
 A mobile application built with **Flutter** that intelligently identifies dog breeds from images using **AI-powered image classification** and **TensorFlow Lite** inference.
 
@@ -243,7 +243,7 @@ flutter run
 
 ## 📱 App Features
 
-## 🎯 Main Screens
+### 🎯 Main Screens
 1. Splash Screen – Welcome screen with feature overview
 2. Scanner Screen – Image capture/upload interface
 3. Results Screen – Classification results with breed details
@@ -251,7 +251,7 @@ flutter run
 5. History Screen – View past classifications
 6. Statistics Screen – Charts and analytics of scan history
 
-## 🔍 Classification Workflow
+### 🔍 Classification Workflow
 1. User captures or uploads a dog image
 2. Image preprocessing and resize (150×150)
 3. TensorFlow Lite inference on-device
@@ -260,13 +260,13 @@ flutter run
 6. Store result to local storage and Firebase
 7. User can provide feedback (correct/incorrect)
 
-## 🔐 Security Features
+### 🔐 Security Features
 - Local inference (images not sent to servers for classification)
 - Firebase authentication for user data
 - Secure data storage with Firestore
 - Image processing on-device
 
-## 📈 Performance Metrics
+### 📈 Performance Metrics
 
 |       Metric        |         Value         |
 |---------------------|-----------------------|
