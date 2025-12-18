@@ -1,18 +1,19 @@
-# 🐾 PawScan – Dog Breeds Image Classification System
+# 🐾 PawScan – Dog Breeds Image Classification Mobile App
 
-An intelligent image classification system powered by **Deep Learning and Convolutional Neural Networks (CNNs)** that accurately identifies different dog breeds from images. PawScan is designed for educational, research, and real-world pet identification applications.
+A mobile application built with **Flutter** that intelligently identifies dog breeds from images using **AI-powered image classification** and **TensorFlow Lite** inference.
 
-## 📋 Overview
+## 📱 Overview
 
-**PawScan** is a machine learning application that leverages computer vision to classify dog breeds from uploaded images. This project demonstrates a complete **end-to-end ML pipeline**, from data preprocessing and model training to evaluation and deployment readiness.
+**PawScan** is a cross-platform mobile application (iOS/Android) that leverages machine learning to classify dog breeds in real-time. Users can capture photos with their camera or upload from their gallery to instantly identify dog breeds with confidence scores, detailed breed information, and scan history tracking.
 
-### Project Scope
-- **Type**: Supervised Learning – Image Classification  
-- **Algorithm**: Convolutional Neural Networks (CNN)  
-- **Dataset**: Dog Breed Image Dataset  
-- **Problem**: Multi-class classification  
-- **Accuracy Target**: 90%+  
-- **Deployment Ready**: Yes, with inference scripts
+### Key Features
+- 📸 **Real-time Image Capture** – Camera integration for instant photo capture
+- 🖼️ **Gallery Upload** – Import images from device storage
+- 🤖 **ML Inference** – TensorFlow Lite for on-device breed classification
+- 📊 **Detailed Breed Info** – Size, weight, lifespan, temperament, energy level
+- 📈 **Scan History** – Track and view all classification results
+- ☁️ **Firebase Integration** – Cloud storage and authentication
+- 🎨 **Beautiful UI** – Intuitive and modern design
 
 ## 🎯 Project Objectives
 
@@ -25,73 +26,94 @@ An intelligent image classification system powered by **Deep Learning and Convol
 
 ## 🛠️ Technology Stack
 
-| Component | Technology |
-|----------|-----------|
-| **Language** | Python 3.8+ |
-| **Deep Learning** | TensorFlow / Keras |
-| **Image Processing** | OpenCV, PIL |
-| **Data Analysis** | NumPy, Pandas |
-| **Visualization** | Matplotlib, Seaborn |
-| **ML Utilities** | Scikit-learn |
-| **Notebooks** | Jupyter / Google Colab |
-| **Deployment (Optional)** | Flask / TensorFlow Lite |
+|       Component        |             Technology                |
+|------------------------|---------------------------------------|
+| **Framework**          | Flutter 3.x                           |
+| **Language**           | Dart                                  |
+| **ML/AI**              | TensorFlow Lite                       |
+| **Backend**            | Firebase (Auth, Firestore, Storage)   |
+| **Image Processing**   | image, image_picker packages          |
+| **Data Visualization** | fl_chart                              |
+| **Storage**            | SharedPreferences, Firebase           |
+| **Platform**           | iOS & Android                         |
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
-Sabelino__DogBreed_Classification_FinalProject/
+Hand_Gestures_App/
+├── lib/
+│   ├── main.dart                                            # Entry point, UI components, breed data
+│   ├── firebase_service.dart                                # Firebase operations
+│   └── firebase_options.dart                                # Firebase configuration
 │
-├── data/
-│   ├── raw/
-│   │   └── dog_images/
-│   │       ├── Airedale/          [100-250 images]
-│   │       ├── Beagle/         [100-250 images]
-│   │       ├── Bernese Mountain Dog/       [100-250 images]
-│   │       ├── Cairn Terrier/       [100-250 images]
-│   │       ├── Chow Chow/           [100-250 images]
-│   │       ├── Entlebutcher/      [100-250 images]
-│   │       ├── Maltese/         [100-250 images]
-│   │       ├── Pug/      [100-250 images]
-│   │       ├── Silky Terrier/         [100-250 images]
-│   │       └── Tibetan Terrier/ [100-250 images]
-│   └── processed/
-│       ├── train/
-│       ├── val/
-│       └── test/
-│
-├── models/
-│   ├── trained_model.h5         # Final trained model
-│   ├── model_weights.h5         # Model weights
-│   └── model_architecture.json  # Architecture definition
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_model_development.ipynb
-│   ├── 04_model_training.ipynb
-│   └── 05_evaluation_analysis.ipynb
-│
-├── src/
-│   ├── __init__.py
-│   ├── preprocessing.py          # Data preparation functions
-│   ├── model.py                 # CNN model architecture
-│   ├── train.py                 # Training script
-│   ├── evaluate.py              # Evaluation metrics
-│   ├── predict.py               # Prediction script
-│   └── utils.py                 # Helper functions
-│
-├── results/
-│   ├── confusion_matrix.png
-│   ├── accuracy_curves.png
-│   ├── loss_curves.png
-│   └── classification_report.txt
-│
-├── requirements.txt
-├── config.yaml
-├── README.md
-└── LICENSE
+├── assets/ # Images and breed logos
+│   ├── model_unquant.tflite                                 # TFLite model binary
+│   ├── labels.txt                                           # Gesture class labels
+│   ├── logo1.png, logo2.png
+│   ├── airedale.jpg, beagle.jpg, bernese.jpg
+│   ├── cairn_terrier.jpg, chow.jpg, entlebutcher2.jpg
+│   ├── maltese.jpg, pug.jpg, silky.jpg, tibetan.jpg
+│   └── [breed]_logo.png files
+├── android/                                                  # Android platform code
+├── ios/                                                      # iOS platform code
+├── web/                                                      # Web platform code
+├── pubspec.yaml                                              # Flutter dependencies
+└── test/                                                     # Unit & widget tests
 ```
+
 ## 📊 Dataset Information
+
+## 🐶 Supported Dog Breeds
+
+The app recognizes and provides detailed information for **10 dog breeds**:
+
+1. **Airedale** – Loyal terrier, large size, very high energy
+2. **Beagle** – Energetic hunter, small size, high energy
+3. **Bernese** – Working dog, large size, moderate energy
+4. **Cairn Terrier** – Scottish terrier, small size, high energy
+5. **Chow Chow** – Fluffy breed, medium-large size, moderate energy
+6. **Entlebucher** – Mountain dog, medium size, very high energy
+7. **Maltese** – Small white dog, toy size, high energy
+8. **Pug** – Compact toy breed, moderate energy
+9. **Silky Terrier** – Elegant terrier, small size, high energy
+10. **Tibetan Terrier** – Rare Asian breed, medium size, moderate energy
+
+## 🧠 Machine Learning Model
+
+- **Model Type**: Convolutional Neural Network (CNN)
+- **Input Size**: 150×150×3 (RGB images)
+- **Framework**: TensorFlow/Keras → Converted to TensorFlow Lite
+- **Inference**: On-device classification (no internet required for inference)
+- **Classes**: 10 dog breeds
+- **Performance**: 93%+ accuracy on test dataset
+
+## 📊 Data Models
+
+### DogBreed Class
+```dart
+DogBreed(
+  name: String,
+  description: String,
+  imageUrl: String,
+  longDescription: String,
+  imageUrls: List<String>,
+  size: String,
+  weight: String,
+  lifespan: String,
+  temperament: String,
+  energyLevel: String,
+)
+
+Classification(
+  scannedBreed: String,
+  detectedBreed: String,
+  confidence: double,
+  isCorrect: bool,
+  timestamp: DateTime,
+  uploadSource: UploadSource,
+)
+
+```
 
 ### Dataset Composition
 
@@ -108,21 +130,6 @@ Sabelino__DogBreed_Classification_FinalProject/
 | 🐕 Silky Terrier | 150 | 90 | 30 | 30 |
 | 🐾 Tibetan Terrier | 150 | 90 | 30 | 30 |
 | **Total** | **1,500 images** | **900** | **300** | **300** |
-
-### Data Characteristics
-
-- **Image Size**: 150 × 150 pixels  
-- **Color Space**: RGB  
-- **Format**: JPG / PNG  
-- **Split Ratio**:  
-  - Training: 60%  
-  - Validation: 20%  
-  - Testing: 20%  
-- **Augmentation**:
-  - Rotation (20°)
-  - Horizontal Flip
-  - Zoom (0.2)
-  - Brightness Adjustment
 
 ## 🧠 CNN Architecture
 
@@ -205,6 +212,83 @@ Output (8 classes) + Softmax
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+- Flutter 3.x installed
+- Dart SDK
+- Android Studio / Xcode (for emulation)
+- Firebase project configured
+
+### Installation
+1. **Clone the repository:**
+```bash
+git clone https://github.com/Mariaclaresse/Sabelino_DogBreeds_Classification_FinalProject.git
+cd Sabelino_DogBreeds_Classification_FinalProject
+```
+
+2. **Install dependencies:**
+```bash
+flutter pub get
+```
+
+3. **Configure Firebase:**
+- Set up Firebase project
+- Add google-services.json (Android)
+- Add GoogleService-Info.plist (iOS)
+
+4. **Run the app:**
+```bash
+flutter run
+```
+
+## 📱 App Features
+
+## 🎯 Main Screens
+1. Splash Screen – Welcome screen with feature overview
+2. Scanner Screen – Image capture/upload interface
+3. Results Screen – Classification results with breed details
+4. Breed Details Screen – Comprehensive breed information
+5. History Screen – View past classifications
+6. Statistics Screen – Charts and analytics of scan history
+
+## 🔍 Classification Workflow
+1. User captures or uploads a dog image
+2. Image preprocessing and resize (150×150)
+3. TensorFlow Lite inference on-device
+4. Model returns breed prediction + confidence score
+5. Display detailed breed information
+6. Store result to local storage and Firebase
+7. User can provide feedback (correct/incorrect)
+
+## 🔐 Security Features
+- Local inference (images not sent to servers for classification)
+- Firebase authentication for user data
+- Secure data storage with Firestore
+- Image processing on-device
+
+## 📈 Performance Metrics
+
+|       Metric        |         Value         |
+|---------------------|-----------------------|
+| Model Accuracy      | 93%+                  |
+| Inference Speed     | <500ms per image      | 
+| App Size            | ~150MB (with TFlite)  | 
+| Supported Platforms | iOS 11+, Android 5.0+ |
+
+## 🎓 Educational Value
+
+This project demonstrates:
+- ✅ Complete ML pipeline implementation for image classification
+- ✅ CNN architecture design and training specifically for dog breeds
+- ✅ Data preprocessing and augmentation for diverse breed images
+- ✅ Model evaluation and analysis using accuracy, precision, recall, and F1-score
+- ✅ Performance metrics interpretation for multi-class classification
+- ✅ Real-world problem solving in pet and animal recognition
+- ✅ Production-ready code practices including prediction scripts and deployment
+- ✅ Cross-platform mobile application development with Flutter
+- ✅ Integration of machine learning models into mobile applications
+- ✅ Cloud backend integration with Firebase
+
 ## 🚧 Development Status
 
 - [x] Data collection and exploration
@@ -218,38 +302,57 @@ Output (8 classes) + Softmax
 - [ ] Web API deployment
 - [ ] Mobile app integration
 
-## 🔮 Future Improvements
+### 🔮 Future Enhancements
 
 ### Short Term
-- [ ] Increase dataset size to 2000+ dog images
-- [ ] Implement advanced data augmentation strategies
-- [ ] Experiment with different architectures (ResNet, VGG, EfficientNet)
-- [ ] Add attention mechanisms for better feature focus
 
-### Medium Term
-- [ ] Deploy as web service (Flask/FastAPI)
-- [ ] Create REST API with Swagger documentation
-- [ ] Build web interface for dog breed predictions
-- [ ] Implement batch prediction and inference pipelines
+- [ ] Add more dog breeds (50+ breeds)
+- [ ] Implement confidence threshold alerts
+- [ ] Export classification reports
+- [ ] Offline mode improvements
+
+##3 Medium Term
+
+- [ ] Web app version
+- [ ] Real-time camera classification
+- [ ] Breed comparison feature
+- [ ] Integration with dog breed databases
 
 ### Long Term
-- [ ] Mobile app (Android/iOS) with TensorFlow Lite
-- [ ] Real-time camera-based dog breed classification
-- [ ] Explainability (Grad-CAM, LIME) for model decisions
-- [ ] Model compression and optimization for edge devices
-- [ ] Integration with pet or breed databases
 
-## 🎓 Educational Value
+- [ ] Advanced analytics dashboard
+- [ ] Community breed database
+- [ ] Veterinary integration
+- [ ] Cross-breed identification
+- [ ] AR visualization of breed traits
 
-This project demonstrates:
-- ✅ Complete ML pipeline implementation for image classification
-- ✅ CNN architecture design and training specifically for dog breeds
-- ✅ Data preprocessing and augmentation for diverse breed images
-- ✅ Model evaluation and analysis using accuracy, precision, recall, and F1-score
-- ✅ Performance metrics interpretation for multi-class classification
-- ✅ Real-world problem solving in pet and animal recognition
-- ✅ Production-ready code practices including prediction scripts and deployment
+## 🧪 Testing
 
+### Manual Testing Checklist
+
+- [ ] Camera capture functionality
+- [ ] Gallery upload functionality
+- [ ] Model inference accuracy
+- [ ] Firebase data sync
+- [ ] History storage and retrieval
+- [ ] UI responsiveness on different devices
+- [ ] Offline functionality
+
+## 📦 Dependencies
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.0
+  tflite_flutter: ^0.10.0
+  image: ^4.0.0
+  firebase_core: ^2.0.0
+  firebase_auth: ^4.0.0
+  cloud_firestore: ^4.0.0
+  firebase_storage: ^11.0.0
+  shared_preferences: ^2.0.0
+  fl_chart: ^0.60.0
+```
 
 ## 📄 License
 
@@ -261,33 +364,35 @@ This project is part of academic coursework for educational purposes.
 - **GitHub**: [@Mariaclaresse](https://github.com/Mariaclaresse)
 - **Program**: BS Information Technology (BSIT)
 - **Institution**: Caraga State University Cabadbaran Campus
-- **Project Type**: Final Project
+- **Project Type**: Mobile App Development
 - **Completion Date**: December 2025
 - **Email**: onilebas.mariaclaresse@gmail.com
 
 ## 🙏 Acknowledgments
 
-- **Dataset**: Custom collected dog breed images from various sources
-- **Framework**: TensorFlow/Keras team
-- **Inspiration**: AI applications in pet and animal recognition
-- **Support**: Course instructors, mentors, and online ML communities
+- **Framework**:  Flutter and Dart team
+- **ML Framework**: TensorFlow/Keras team
+- **Backend**: Firebase
+- **Inspiration**: AI applications in pet and animal recognition and identification
+- **Support**: Course instructors, mentors, and developer community
 
 ## 💬 Support & Contact
 
-For questions or issues:
+For questions, issues, or feature requests:
 - 📧 [GitHub Issues](https://github.com/Mariaclaresse/Sabelino_DogBreeds_Classification_FinalProject/issues)
 - 💬 [GitHub Discussions](https://github.com/Mariaclaresse/Sabelino_DogBreeds_Classification_FinalProject/discussions)
+- 📧 Email: onilebas.mariaclaresse@gmail.com
 
 ## ⭐ If You Found This Helpful
 
-- Star ⭐ the repository to show support
-- Fork 🔀 to experiment or improve the project
-- Share 📢 with friends, classmates, or colleagues
-- Contribute 🤝 by suggesting improvements or adding features
-- Follow 👥 for updates on new models and features
+- Star ⭐ this repository if you find it helpful
+- Fork 🔀 to contribute or experiment
+- Share 📢 with friends and colleagues
+- Contribute 🤝 with feature suggestions or improvements
+- Follow 👥 for updates and new features
 
 ---
 
-**Thank you for exploring the PawScan project! 🐾✨**
+**Thank you for using PawScan! 🐾✨**
 
 *Classifying dog breeds with AI, one paw at a time!* 🐶🦴
