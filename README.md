@@ -391,6 +391,15 @@ For questions, issues, or feature requests:
 - Contribute 🤝 with feature suggestions or improvements
 - Follow 👥 for updates and new features
 
+```bibtex
+@software{dog_breeds_app_2025,
+  title={Dog Breeds Recognition App},
+  author={Maria Claresse C. Sabelino},
+  year={2025},
+  url={https://github.com/Mariaclaresse/Sabelino_DogBreeds_Classification_FinalProject}
+}
+```
+
 ---
 
 **Thank you for using PawScan! 🐾✨**
